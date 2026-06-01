@@ -87,7 +87,7 @@ class MemoryCascade:
             summary=summary,
             detail=detail,
             keywords=extract_keywords(summary),
-            error_type=error_type or detect_error_pattern(detail or summary),
+            error_type=error_type or detect_error_pattern(f"{summary} {detail}"),
             parent_turn=parent_turn,
         )
 

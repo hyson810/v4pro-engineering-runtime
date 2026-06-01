@@ -48,7 +48,7 @@ def detect_error_pattern(text: str) -> str | None:
 
     patterns = {
         "syntax_error": ["syntaxerror", "syntax error", "unexpected token"],
-        "type_error": ["typeerror", "type error", "cannot read property"],
+        "type_error": ["typeerror", "type error"],
         "import_error": ["importerror", "module not found", "no module named"],
         "auth_error": ["unauthorized", "401", "403", "permission denied"],
         "timeout": ["timeout", "timed out", "connection refused"],
