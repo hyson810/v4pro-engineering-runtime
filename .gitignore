@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.v4pro-runtime/
+*.egg-info/
+dist/
+build/
+.DS_Store

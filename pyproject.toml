@@ -1,0 +1,17 @@
+[project]
+name = "v4pro-engineering-runtime"
+version = "0.1.0"
+description = "长程工程增强运行时：让 DeepSeek V4 Pro 跑得更久、产出更惊艳"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+search = ["duckduckgo-search>=7.0"]
+all = ["duckduckgo-search>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["shared*", "v3_stability*", "h1_creativity*"]

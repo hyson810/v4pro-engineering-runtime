@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "v3-stability": {
+      "command": "python3",
+      "args": ["v3_stability/server.py"],
+      "cwd": "${V4PRO_RUNTIME_DIR}",
+      "env": {
+        "PROJECT_PATH": "${CLAUDE_PROJECT_DIR}",
+        "MODEL_BACKEND": "deepseek-v4-pro"
+      }
+    },
+    "h1-creativity": {
+      "command": "python3",
+      "args": ["h1_creativity/server.py"],
+      "cwd": "${V4PRO_RUNTIME_DIR}",
+      "env": {
+        "PROJECT_PATH": "${CLAUDE_PROJECT_DIR}",
+        "SEARCH_PROVIDER": "duckduckgo"
+      }
+    }
+  }
+}
